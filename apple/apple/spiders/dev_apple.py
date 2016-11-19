@@ -16,6 +16,7 @@ class DevAppleSpider(scrapy.Spider):
     start_urls = []
     url = 'https://developer.apple.com/videos/wwdc'
     years_list =["2012","2013","2014","2015","2016"]
+    
     for year in years_list:
         start_urls.append(url + year)
 
